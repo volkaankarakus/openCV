@@ -15,7 +15,7 @@ def resizewithaspectratio(img, width=None, height=None, inter=cv2.INTER_AREA):
     return cv2.resize(img,dimension,interpolation=inter)
 
 img=cv2.imread("people.jpg")
-img1=resizewithaspectratio(img,width=None,height=600,inter=cv2.INTER_AREA)
+img1=resizewithaspectratio(img,width=None,height=600,inter=cv2.INTER_AREA) # Optional
 cv2.imshow("Original",img)
 cv2.imshow("Resized",img1)
 
